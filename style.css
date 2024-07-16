@@ -1,5 +1,5 @@
 *{
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat";
     font-optical-sizing: auto;
     font-style: normal;
 }
@@ -30,25 +30,37 @@ table {
 }
 
 table th, table td {
-    padding: 12px 15px;
+    padding: 12px 25px;
+    text-align: left;
+    background-color: #fff;
+}
+
+
+table th {
+    background-color: #fff;
+    font-weight: bold;
     text-align: left;
 }
 
-table th {
-    background-color: #f8f8f8;
-    font-weight: bold;
-    text-align: center;
-}
 
 table tr:nth-child(even) {
     background-color: #f9f9f9;
 }
-/* table tr:hover:nth-child(even) {
+table tr:hover:nth-child(even) {
     background-color: #24a306;
     transition: 0.5s;
-} */
+} 
 
-textarea, select, input[type="text"] {
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 4px 0;
+    font-size: 14px;
+    resize: vertical;
+    border: none;
+}
+
+select {
     width: 100%;
     padding: 8px;
     margin: 4px 0;
@@ -58,6 +70,17 @@ textarea, select, input[type="text"] {
     font-size: 14px;
     resize: vertical;
 }
+
+input[type="text"] {
+    width: 80px;
+    margin: 4px 0;
+    box-sizing: content-box;
+    border: none;
+    align-items: left;
+    text-decoration: underline;
+    color: #03228C;
+}
+
 
 div[onclick] {
     display: inline-block;
@@ -77,46 +100,31 @@ div[onclick]:hover {
 }
 
 select {
-    padding: 8px;
+    width: 150px;
+    padding: 12px;
     border: none;
-    border-radius: 4px;
-    background-color: #fff;
-    cursor: pointer;
-    text-align: center;
+    border-radius: 30px;
+    background-color: #f9f9f9;
+    box-shadow: 7px 5px 10px 5px rgba(0, 0, 0, 0.063);
+    font-weight: 500;
+    
 }
 
-select:focus {
-    outline: none;
-    border: 1px solid #007bff;
-}
-
-input[type="text"] {
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-}
-
-.select-label {
-    display: inline-block;
+select option {
     padding: 10px;
-    border-radius: 4px;
-    color: #fff;
-    font-size: 15px;
-    font-weight: bold;
-    margin: 4px 0;
 }
 
-.select-label.resource {
-    background-color: #03228C;
+select option.habit {
+    background-color: #a9d18e;
+    color: #167000;
 }
 
-.select-label.competence {
-    background-color: #ffbe7e;
+select option.competence {
+    background-color: #f8cbad;
     color: #D98634;
 }
 
-.select-label.habit {
-    background-color: #d4edda;
-    color: #24a306;
+select option.resource {
+    background-color: #b4c7e7;
+    color: #03228C;
 }
