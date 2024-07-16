@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capability Commitments Table</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="/index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="table-container">
+        <table id="capability_commitments_table">
+            <thead>
+                <tr>
+                    <th>Capability</th>
+                    <th>Type of capability</th>
+                    <th>Approach and Action plan</th>
+                    <th>Start date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <textarea required="" id="capability_commitments_capabilities_1" name="capability_commitments[capabilities][1]">Daily Beliefs and Mindset shift</textarea>
+                    </td>
+                    <td>
+                        <select required="" name="capability_commitments[capabilities_types][1]" id="capability_commitments_type_1">
+                            <option></option>
+                            <option value="resource" class="select-label resource">Resource</option>
+                            <option value="competence" class="select-label competence">Competence</option>
+                            <option value="habit" class="select-label habit" selected="">Habit</option>
+                        </select>
+                    </td>
+                    <td>
+                        <textarea required="" id="capability_commitments_action_plan_1" name="capability_commitments[action_plan][1]">Repeat Affirmations, Hourly Visualization technique, Audio-record listening</textarea>
+                    </td>
+                    <td>
+                        <input required="" placeholder="yyyy-mm-dd" type="text" id="capability_commitments_start_dates_1" name="capability_commitments[start_dates][1]" value="2024-07-03">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea required="" id="capability_commitments_capabilities_2" name="capability_commitments[capabilities][2]">Weekly QuestMeUp completion</textarea>
+                    </td>
+                    <td>
+                        <select required="" name="capability_commitments[capabilities_types][2]" id="capability_commitments_type_2">
+                            <option></option>
+                            <option value="resource" class="select-label resource">Resource</option>
+                            <option value="competence" class="select-label competence">Competence</option>
+                            <option value="habit" class="select-label habit" selected="">Habit</option>
+                        </select>
+                    </td>
+                    <td>
+                        <textarea required="" id="capability_commitments_action_plan_2" name="capability_commitments[action_plan][2]">Dedicate time in my week to Complete all weekly quests</textarea>
+                    </td>
+                    <td>
+                        <input required="" placeholder="yyyy-mm-dd" type="text" id="capability_commitments_start_dates_2" name="capability_commitments[start_dates][2]" value="2024-07-03">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea id="capability_commitments_capabilities_3" name="capability_commitments[capabilities][3]">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex</textarea>
+                    </td>
+                    <td>
+                        <select name="capability_commitments[capabilities_types][3]" id="capability_commitments_type_3">
+                            <option></option>
+                            <option value="resource" class="select-label resource" selected="">Resource</option>
+                            <option value="competence" class="select-label competence">Competence</option>
+                            <option value="habit" class="select-label habit">Habit</option>
+                        </select>
+                    </td>
+                    <td>
+                        <textarea id="capability_commitments_action_plan_3" name="capability_commitments[action_plan][3]">Lorem ipsum dolor sit amet, con</textarea>
+                    </td>
+                    <td>
+                        <input placeholder="yyyy-mm-dd" type="text" id="capability_commitments_start_dates_3" name="capability_commitments[start_dates][3]" value="2021-08-06">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div onclick="addTableRow()">+ Add capability</div>
+    </div>
+</body>
+</html>
